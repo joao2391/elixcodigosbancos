@@ -73,7 +73,8 @@ defmodule ElixCodigosBancos do
   end
 
   @doc """
-  Busca as informacoes do banco de acordo com o nome
+  Busca as informacoes do banco de acordo com o nome.
+  Os nomes sao case sensitives
   """
   def get_banco_by_nome(nome) when is_bitstring(nome) do
     case HTTPoison.get(
