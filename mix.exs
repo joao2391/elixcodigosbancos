@@ -1,13 +1,19 @@
 defmodule Elixcodigosbancos.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+
   def project do
     [
       app: :elixcodigosbancos,
-      version: "0.1.0",
+      version: "#{@version}",
       elixir: "~> 1.12",
+      description: "Library to get information about brazilian's bank codes",
+      source_url: "https://github.com/joao2391/elixcodigosbancos",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      docs: [source_ref: "#{@version}", extras: ["README.md"], main: "readme"]
     ]
   end
 
@@ -27,4 +33,15 @@ defmodule Elixcodigosbancos.MixProject do
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
+
+  defp package do
+    [
+      maintainers: ["Joao Paulo de C. Lima"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/joao2391/elixcodigosbancos",
+      }
+    ]
+  end
+
 end
