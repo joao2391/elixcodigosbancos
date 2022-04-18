@@ -39,9 +39,8 @@ defmodule Elixcodigosbancos.MixProject do
       maintainers: ["Joao Paulo de C. Lima"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/joao2391/elixcodigosbancos",
+        "GitHub" => "https://github.com/joao2391/elixcodigosbancos"
       }
     ]
   end
-
 end

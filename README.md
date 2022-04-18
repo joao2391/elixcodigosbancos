@@ -1,6 +1,10 @@
-# Elixcodigosbancos
+[![ElixCodigosBancos version](https://img.shields.io/hexpm/v/elixcodigosbancos.svg)](https://hex.pm/packages/elixcodigosbancos)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/elixcodigosbancos/)
+[![Hex.pm](https://img.shields.io/hexpm/dt/elixcodigosbancos.svg)](https://hex.pm/packages/)
 
-**TODO: Add description**
+# ElixCodigosBancos
+
+This lib helps you to get brazilian's offset codes
 
 ## Installation
 
@@ -15,7 +19,19 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixcodigosbancos](https://hexdocs.pm/elixcodigosbancos).
+## Features
 
+```elixir
+get_banco_by_codigo("123")
+
+get_bancos()
+
+get_banco_by_nome("nome_banco")
+```
+
+
+## Documentation
+Documentation can be found at [https://hexdocs.pm/elixcodigosbancos](https://hexdocs.pm/elixcodigosbancos).
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

@@ -13,5 +13,4 @@ defmodule ElixCodigosBancosTest do
   test "retorna 04 bancos com o nome Bradesco" do
     assert ElixCodigosBancos.get_banco_by_nome("Bradesco") |> Enum.count() == 4
   end
-
 end
